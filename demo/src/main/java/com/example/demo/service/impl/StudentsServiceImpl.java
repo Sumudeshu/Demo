@@ -20,6 +20,10 @@ public class StudentsServiceImpl implements StudentsService{
 		List<Students> list = studentsMapper.findAll();
 		return list;
 	}
-	
-	
+
+	@Override
+	public int create(Students student) {
+		int count = studentsMapper.create(student);
+		return count;
+	}
 }

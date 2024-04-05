@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.pojo.Students;
@@ -24,5 +25,11 @@ public class TestController {
 	public List<Students> test2() {
 		List<Students> list = studentsService.findAll();
 		return list;
+	}
+	
+	@PostMapping("create")
+	public int create(Students student) {
+		int count = studentsService.create(student);
+		return count;
 	}
 }

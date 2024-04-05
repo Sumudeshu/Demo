@@ -3,6 +3,7 @@ package com.example.demo.pojo;
 public class Students {
 	private Integer id;
 	private String name;
+	
 	public Integer getId() {
 		return id;
 	}

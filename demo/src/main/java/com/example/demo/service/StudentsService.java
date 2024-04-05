@@ -10,4 +10,6 @@ import com.example.demo.pojo.Students;
 public interface StudentsService {
 	
 	public List<Students> findAll();
+	
+	int create(Students student);
 }

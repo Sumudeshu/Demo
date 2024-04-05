@@ -12,4 +12,11 @@ public interface StudentsMapper {
 	  * 查询所有用户
 	  */
 	 public List<Students> findAll();
+	 
+	 /**
+	  * 增
+	  * @param student
+	  * @return
+	  */
+	 int create(Students student);
 }

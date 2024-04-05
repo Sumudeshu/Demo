@@ -11,5 +11,10 @@
    <select id="findAll"  resultMap="student">
      select * from students
    </select>
+
+   <insert id="create" parameterType="com.example.demo.pojo.Students">
+     insert into students(id,name)  values (#{id}, #{name})
+    </insert>
+  
    
 </mapper>

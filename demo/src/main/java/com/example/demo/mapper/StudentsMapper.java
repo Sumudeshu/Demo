@@ -19,4 +19,11 @@ public interface StudentsMapper {
 	  * @return
 	  */
 	 int create(Students student);
+	 
+	 /**
+	  * 根据id改名字
+	  * @param id
+	  * @return
+	  */
+	 int updateNameById(Students student);
 }

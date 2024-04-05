@@ -26,4 +26,10 @@ public class StudentsServiceImpl implements StudentsService{
 		int count = studentsMapper.create(student);
 		return count;
 	}
+
+	@Override
+	public int updateNameById(Students student) {
+		int count = studentsMapper.updateNameById(student);
+		return count;
+	}
 }

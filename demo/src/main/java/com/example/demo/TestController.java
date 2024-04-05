@@ -21,15 +21,36 @@ public class TestController {
 		return "hello world!";
 	}
 
+	/**
+	 * 查
+	 * @return
+	 */
 	@GetMapping("/test2")
 	public List<Students> test2() {
 		List<Students> list = studentsService.findAll();
 		return list;
 	}
 	
+	/**
+	 * 增
+	 * @param student
+	 * @return
+	 */
 	@PostMapping("create")
 	public int create(Students student) {
 		int count = studentsService.create(student);
 		return count;
 	}
+	
+	/**
+	 * 改
+	 * @param id
+	 * @return
+	 */
+	@PostMapping("updateUserById")
+	public int updateUserById(Students student) {
+		int count = studentsService.updateNameById(student);
+		return count;
+	}
+	
 }

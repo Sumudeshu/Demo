@@ -14,7 +14,11 @@
 
    <insert id="create" parameterType="com.example.demo.pojo.Students">
      insert into students(id,name)  values (#{id}, #{name})
-    </insert>
+   </insert>
+    
+   <update  id="updateNameById" parameterType="com.example.demo.pojo.Students">
+        update students set name = #{name} where id = #{id}
+   </update>
   
    
 </mapper>

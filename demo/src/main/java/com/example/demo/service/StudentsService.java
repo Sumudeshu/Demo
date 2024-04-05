@@ -12,4 +12,6 @@ public interface StudentsService {
 	public List<Students> findAll();
 	
 	int create(Students student);
+	
+	int updateNameById(Students student);
 }
